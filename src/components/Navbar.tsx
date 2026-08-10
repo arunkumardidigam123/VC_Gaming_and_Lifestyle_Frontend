@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
       {/* Brand Name → Corporate Hub */}
       <Link
-        to="/corporate"
+        to="/"
         className="font-headline-md text-headline-md font-extrabold tracking-tighter text-on-surface uppercase hover:text-secondary-fixed transition-colors duration-300"
       >
         VC SPORTS &amp; LIFE STYLE PVT. LTD.
@@ -47,21 +47,19 @@ export default function Navbar() {
       <div className="flex gap-4 items-center font-label-mono text-label-mono uppercase">
         <button
           onClick={() => setActiveCTA(activeCTA === 'smartsportz' ? null : 'smartsportz')}
-          className={`hidden md:block px-4 py-2 border transition-all duration-300 font-bold ${
-            activeCTA === 'smartsportz'
+          className={`hidden md:block px-4 py-2 border transition-all duration-300 font-bold ${activeCTA === 'smartsportz'
               ? 'bg-secondary-fixed border-secondary-fixed text-black'
               : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
-          }`}
+            }`}
         >
           SMARTSPORTZ.IN
         </button>
         <button
           onClick={() => setActiveCTA(activeCTA === 'vibe-crew' ? null : 'vibe-crew')}
-          className={`px-4 py-2 border transition-all duration-300 font-bold ${
-            activeCTA === 'vibe-crew'
+          className={`px-4 py-2 border transition-all duration-300 font-bold ${activeCTA === 'vibe-crew'
               ? 'bg-secondary-fixed border-secondary-fixed text-black'
               : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
-          }`}
+            }`}
         >
           VIBE CREW
         </button>
