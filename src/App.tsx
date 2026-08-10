@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import CoreNetwork from './pages/CoreNetwork';
 import About from './pages/About';
 import Founder from './pages/Founder';
 import Brands from './pages/Brands';
@@ -17,8 +16,7 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<CoreNetwork />} />
-            <Route path="/corporate" element={<CorporateHub />} />
+            <Route path="/" element={<CorporateHub />} />
             <Route path="/about" element={<About />} />
             <Route path="/founder" element={<Founder />} />
             <Route path="/brands" element={<Brands />} />
