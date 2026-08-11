@@ -15,12 +15,16 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
-      {/* Brand Name → Corporate Hub */}
       <Link
         to="/"
-        className="font-headline-md text-headline-md font-extrabold tracking-tighter text-on-surface uppercase hover:text-secondary-fixed transition-colors duration-300"
+        className="flex items-center gap-3 font-headline-md text-headline-md font-extrabold tracking-tighter text-on-surface uppercase hover:text-secondary-fixed transition-colors duration-300"
       >
-        VC SPORTS &amp; LIFE STYLE PVT. LTD.
+        <img
+          src="/images/logo.png"
+          alt="VC Sports & Lifestyle Logo"
+          className="h-16 w-auto object-contain"
+        />
+        <span className="hidden sm:inline">VC SPORTS &amp; LIFE STYLE PVT. LTD.</span>
       </Link>
 
       {/* Desktop Nav Links */}
