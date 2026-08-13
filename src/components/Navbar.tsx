@@ -24,7 +24,7 @@ export default function Navbar() {
           alt="VC Sports & Lifestyle Logo"
           className="h-16 w-auto object-contain"
         />
-        <span className="hidden sm:inline">VC SPORTS &amp; LIFE STYLE PVT. LTD.</span>
+        <span className="hidden sm:inline">VC SPORTS &amp; LIFE STYLE</span>
       </Link>
 
       {/* Desktop Nav Links */}
@@ -52,8 +52,8 @@ export default function Navbar() {
         <button
           onClick={() => setActiveCTA(activeCTA === 'smartsportz' ? null : 'smartsportz')}
           className={`hidden md:block px-4 py-2 border transition-all duration-300 font-bold ${activeCTA === 'smartsportz'
-              ? 'bg-secondary-fixed border-secondary-fixed text-black'
-              : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
+            ? 'bg-secondary-fixed border-secondary-fixed text-black'
+            : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
             }`}
         >
           SMARTSPORTZ.IN
@@ -61,8 +61,8 @@ export default function Navbar() {
         <button
           onClick={() => setActiveCTA(activeCTA === 'vibe-crew' ? null : 'vibe-crew')}
           className={`px-4 py-2 border transition-all duration-300 font-bold ${activeCTA === 'vibe-crew'
-              ? 'bg-secondary-fixed border-secondary-fixed text-black'
-              : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
+            ? 'bg-secondary-fixed border-secondary-fixed text-black'
+            : 'border-white/20 text-on-surface hover:bg-secondary-fixed hover:border-secondary-fixed hover:text-black'
             }`}
         >
           VIBE CREW
