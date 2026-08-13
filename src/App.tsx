@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Founder from './pages/Founder';
 import Brands from './pages/Brands';
-import Vision from './pages/Vision';
+import Careers from './pages/Careers';
 import Updates from './pages/Updates';
 import Contact from './pages/Contact';
 import CorporateHub from './pages/CorporateHub';
@@ -20,7 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/founder" element={<Founder />} />
             <Route path="/brands" element={<Brands />} />
-            <Route path="/vision" element={<Vision />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/updates" element={<Updates />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
